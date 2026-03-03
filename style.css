@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: #1e1e1e;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #e0e0e0;
+}
+
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    max-width: 350px;
+}
+
+.day {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background-color: #2d2d2d;
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: #888;
+}
+
+.day.sim {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.day.nao {
+    background-color: #F44336;
+    color: white;
+}
